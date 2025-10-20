@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebMarket – Équipe</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.jpg" alt="Logo WebMarket" class="logo" style="max-width: 150%; height: auto;" />
+        </a>
+        <div class="site-title">
+            <h1>WebMarket</h1>
+            <p>Votre page équipe</p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Introduction de l'équipe -->
+    <p class="livrer">
+        Voici mon équipe pour vous satisfaire… rapide et fiable, quel que soit la condition extérieure !
+    </p>
+
+<!-- Section des membres de l'équipe avec images et liens -->
+<div class="heroes">
+<figure class="hero">
+        <a href="https://onepiece.fandom.com/wiki/Roronoa_Zoro" target="_blank">
+            <img src="images/zoro.jpg" alt="zoro" />
+        </a>
+        <h4><a href="https://onepiece.fandom.com/wiki/Roronoa_Zoro" target="_blank">Zoro</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://onepiece.fandom.com/wiki/luffy" target="_blank">
+            <img src="images/luffy.jpg" alt="luffy" />
+        </a>
+        <h4><a href="https://onepiece.fandom.com/wiki/luffy" target="_blank">Luffy</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://naruto.fandom.com/fr/wiki/Naruto_Uzumaki" target="_blank">
+            <img src="images/naruto.jpg" alt="Naruto Uzumaki" />
+        </a>
+        <h4><a href="https://naruto.fandom.com/fr/wiki/Naruto_Uzumaki" target="_blank">Naruto</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://naruto.fandom.com/fr/wiki/Itachi_Uchiha" target="_blank">
+            <img src="images/itachi.webp" alt="Itachi Uchiha" />
+        </a>
+        <h4><a href="https://naruto.fandom.com/fr/wiki/Itachi_Uchiha" target="_blank">Itachi</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://naruto.fandom.com/wiki/Killer_B" target="_blank">
+            <img src="images/Killer_B.webp" alt="Killer B" />
+        </a>
+        <h4><a href="https://naruto.fandom.com/wiki/Killer_B" target="_blank">Killer B</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://naruto.fandom.com/wiki/Minato_Namikaze" target="_blank">
+            <img src="images/eclaire.webp" alt="Minato Namikaze" />
+        </a>
+        <h4><a href="https://naruto.fandom.com/wiki/Minato_Namikaze" target="_blank">L'éclair jaune</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://naruto.fandom.com/wiki/Jiraiya" target="_blank">
+            <img src="images/Jiray.webp" alt="Jiraiya" />
+        </a>
+        <h4><a href="https://naruto.fandom.com/wiki/Jiraiya" target="_blank">Jiraiya</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://naruto.fandom.com/wiki/Madara_Uchiha" target="_blank">
+            <img src="images/madara.webp" alt="Madara Uchiha" />
+        </a>
+        <h4><a href="https://naruto.fandom.com/wiki/Madara_Uchiha" target="_blank">Madara</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://jujutsu-kaisen.fandom.com/wiki/Gojo_Satoru" target="_blank">
+            <img src="images/gojo.jpg" alt="Gojo Satoru" />
+        </a>
+        <h4><a href="https://jujutsu-kaisen.fandom.com/wiki/Gojo_Satoru" target="_blank">Gojo</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://jujutsu-kaisen.fandom.com/wiki/Ryomen_Sukuna" target="_blank">
+            <img src="images/Sukuna.webp" alt="Ryomen Sukuna" />
+        </a>
+        <h4><a href="https://jujutsu-kaisen.fandom.com/wiki/Ryomen_Sukuna" target="_blank">Sukuna</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori" target="_blank">
+            <img src="images/itadori.jpg" alt="Itadori Yuji" />
+        </a>
+        <h4><a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori" target="_blank">Yuji Itadori</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://myheroacademia.fandom.com/wiki/Izuku_Midoriya" target="_blank">
+            <img src="images/-Deku.jpg" alt="Izuku Midoriya" />
+        </a>
+        <h4><a href="https://myheroacademia.fandom.com/wiki/Izuku_Midoriya" target="_blank">Deku</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://myheroacademia.fandom.com/wiki/Tomura_Shigaraki" target="_blank">
+            <img src="images/tomura.jpg" alt="Tomura Shigaraki" />
+        </a>
+        <h4><a href="https://myheroacademia.fandom.com/wiki/Tomura_Shigaraki" target="_blank">Tomura</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://myheroacademia.fandom.com/wiki/All_Might" target="_blank">
+            <img src="images/all.jpg" alt="All Might" />
+        </a>
+        <h4><a href="https://myheroacademia.fandom.com/wiki/All_Might" target="_blank">All Might</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Vegeta" target="_blank">
+            <img src="images/vegeta.webp" alt="Vegeta" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Vegeta" target="_blank">Vegeta</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Goku" target="_blank">
+            <img src="images/goku.png" alt="Goku" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Goku" target="_blank">Goku</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Broly" target="_blank">
+            <img src="images/broly.jpg" alt="Broly" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Broly" target="_blank">Broly</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Trunks" target="_blank">
+            <img src="images/trunks.jpg" alt="Trunks" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Trunks" target="_blank">Trunks</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Gotenks" target="_blank">
+            <img src="images/Gotenks_ssj3_.webp" alt="Gotenks" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Gotenks" target="_blank">Gotenks</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Gohan" target="_blank">
+            <img src="images/songohan.jpg" alt="son-gohan" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Gohan" target="_blank">son-gohan</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://dragonball.fandom.com/wiki/Piccolo" target="_blank">
+            <img src="images/picolo.jpg" alt="Piccolo" />
+        </a>
+        <h4><a href="https://dragonball.fandom.com/wiki/Piccolo" target="_blank">Piccolo</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://deathnote.fandom.com/wiki/Light_Yagami" target="_blank">
+            <img src="images/light.jpg" alt="Light Yagami" />
+        </a>
+        <h4><a href="https://deathnote.fandom.com/wiki/Light_Yagami" target="_blank">Light</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://heros.fandom.com/fr/wiki/L_Lawliet" target="_blank">
+            <img src="images/Lawliet.webp" alt="Lawliet" />
+        </a>
+        <h4><a href="https://heros.fandom.com/fr/wiki/L_Lawliet" target="_blank">Lawliet</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://hunterxhunter.fandom.com/wiki/Meruem" target="_blank">
+            <img src="images/meruem.webp" alt="Meruem" />
+        </a>
+        <h4><a href="https://hunterxhunter.fandom.com/wiki/Meruem" target="_blank">Meruem</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://hunterxhunter.fandom.com/fr/wiki/Kurapika" target="_blank">
+            <img src="images/Kurapika_HCE_Portrait.webp" alt="Kurapika" />
+        </a>
+        <h4><a href="https://hunterxhunter.fandom.com/fr/wiki/Kurapika" target="_blank">Kurapika</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://hunterxhunter.fandom.com/fr/wiki/Hisoka_Morow" target="_blank">
+            <img src="images/hisoka.jpg" alt="Hisoka" />
+        </a>
+        <h4><a href="https://hunterxhunter.fandom.com/fr/wiki/Hisoka_Morow" target="_blank">Hisoka</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://hunterxhunter.fandom.com/wiki/Gon_Freecss" target="_blank">
+            <img src="images/gon.jpg" alt="Gon Freecss" />
+        </a>
+        <h4><a href="https://hunterxhunter.fandom.com/wiki/Gon_Freecss" target="_blank">Gon</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://hunterxhunter.fandom.com/wiki/Killua_Zoldyck" target="_blank">
+            <img src="images/killua.jpg" alt="Killua Zoldyck" />
+        </a>
+        <h4><a href="https://hunterxhunter.fandom.com/wiki/Killua_Zoldyck" target="_blank">Killua</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://vagabond.fandom.com/wiki/Musashi_Miyamoto" target="_blank">
+            <img src="images/Musashi.jpg" alt="Musashi" />
+        </a>
+        <h4><a href="https://vagabond.fandom.com/wiki/Musashi_Miyamoto" target="_blank">Musashi</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://vagabond.fandom.com/wiki/Kojiro_Sasaki" target="_blank">
+            <img src="images/sasakii.jpg" alt="Kojiro_Sasaki" />
+        </a>
+        <h4><a href="https://vagabond.fandom.com/wiki/Kojiro_Sasaki" target="_blank">Kojiro</a></h4>
+    </figure>
+<figure class="hero">
+        <a href="https://hero.fandom.com/wiki/Andy_(Undead_Unluck)" target="_blank">
+            <img src="images/Andy_Infobox_2.webp" alt="andy" />
+        </a>
+        <h4><a href="https://hero.fandom.com/wiki/Andy_(Undead_Unluck)" target="_blank">Andy</a></h4>
+    </figure>
+</div>
+
+    <h2 class="intro" style="text-align:center;">En espérant vous satisfaire</h2>
+</main>
+
+<!-- Bouton pour ouvrir/fermer la barre latérale -->
+<button1 class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button1>
+
+<!-- Barre latérale de navigation -->
+<aside class="sidebar" id="sidebar">
+    <h2>Navigation</h2>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="config.html">Configurations PC Gamer</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</aside>
+<script>
+    // Fonction pour basculer l'ouverture/fermeture de la sidebar
+    function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+    }
+</script>
+<!-- Footer avec crédits -->
+<footer>
+    <p>Projet WebMarket – 2025 • Fait par : <a href="https://www.instagram.com/Zzionmax/#" target="_blank"><em>ALEX BINENUA</em></a></p>
+    <p><a href="#top">Retour en haut de la page</a></p>
+</footer>
+
+<!-- === Mini lecteur audio persistant === -->
+ <div class="audio-mini-panel" id="miniLecteur" style="position:fixed;bottom:16px;right:16px;z-index:9999;">
+    <button id="playPause" aria-label="Lecture/Pause audio">▶️</button>
+    <input type="range" id="volume" min="0" max="1" step="0.05" value="1" aria-label="Volume audio" style="width:80px;">
+</div>
+<audio id="musique">
+  <source src="Niska - Adriano (Clip Officiel).mp3" type="audio/mpeg">
+</audio>
+<script>
+const audio = document.getElementById('musique');
+const btn = document.getElementById('playPause');
+const volume = document.getElementById('volume');
+
+
+// 🔹 Restaurer la position et le volume
+const savedTime = localStorage.getItem('musicTime');
+if (savedTime) audio.currentTime = parseFloat(savedTime);
+
+const savedVol = localStorage.getItem('musicVol');
+audio.volume = savedVol ? parseFloat(savedVol) : 0.5;
+volume.value = audio.volume;
+
+// 🔹 Lecture automatique si possible
+audio.play().then(() => {
+  btn.textContent = "⏸️";
+}).catch(() => {
+  console.log("Lecture bloquée, l'utilisateur doit appuyer sur ▶️");
+});
+
+// 🔹 Bouton Play / Pause
+btn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏸️";
+  } else {
+    audio.pause();
+    btn.textContent = "▶️";
+  }
+});
+
+// 🔹 Volume
+volume.addEventListener('input', () => {
+  audio.volume = volume.value;
+  localStorage.setItem('musicVol', volume.value);
+});
+
+// 🔹 Sauvegarder la position toutes les secondes
+setInterval(() => {
+  localStorage.setItem('musicTime', audio.currentTime);
+}, 1000);
+</script>
+</body>
+</html>
