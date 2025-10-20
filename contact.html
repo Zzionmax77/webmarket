@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebMarket – Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="header-container flex-start-gap">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.jpg" alt="Logo WebMarket" class="logo" />
+        </a>
+        <div class="site-title">
+            <h1 class="title-main">WebMarket</h1>
+            <p class="subtitle">Votre page contact</p>
+        </div>
+    </div>
+</header>
+<div class="profile">
+<figure class="profile">
+        <a href="https://www.linkedin.com/in/sofiane-benni-20a62b200/" target="_blank">
+            <img src="images/beni.jpg" alt="benni" />
+        </a>
+        <h4><a href="https://www.linkedin.com/in/sofiane-benni-20a62b200/" target="_blank">Benni</a></h4>
+    </figure>
+<figure class="profile">
+        <a href="https://www.linkedin.com/in/youssef-ait-boukioud-82b441376/" target="_blank">
+            <img src="images/youssef.jpg" alt="youssef" />
+        </a>
+        <h4><a href="https://www.linkedin.com/in/youssef-ait-boukioud-82b441376/" target="_blank">Youssef</a></h4>
+    </figure>
+<main>
+    <a href="contact.php" target="_blank">Accéder au formulaire</a>
+    <img src="images/formulaire.png" width="25px" alt="formulaire">
+    <p>Contacter Nous : <a href="https://youtu.be/xvFZjo5PgG0?si=mFdnk3Wsa_OGsJaX" target="_blank">contact@webmarket.com</a></p>
+</main>
+
+<button1 class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button1>
+<aside class="sidebar" id="sidebar">
+    <h2>Navigation</h2>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="config.html">Configurations PC Gamer</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</aside>
+
+<script>
+    function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+    }
+</script>
+
+<footer>
+    <p>Projet WebMarket – 2025 • Fait par : <a href="https://www.instagram.com/Zzionmax/#" target="_blank"><em>ALEX BINENUA</em></a></p>
+    <p><a href="#top">Retour en haut de la page</a></p>
+</footer>
+<!-- === Mini lecteur audio persistant === -->
+<div class="audio-mini-panel" id="miniLecteur" style="position:fixed;bottom:0px;right:0px;z-index:9999;width:200px;height:50px;">
+    <button id="playPause" aria-label="Lecture/Pause audio">▶️</button>
+    <input type="range" id="volume" min="0" max="1" step="0.05" value="1" aria-label="Volume audio" style="width:80px;">
+</div>
+
+<audio id="musique">
+  <source src="Niska - Adriano (Clip Officiel).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById('musique');
+const btn = document.getElementById('playPause');
+const volume = document.getElementById('volume');
+
+// 🔹 Restaurer la position et le volume
+const savedTime = localStorage.getItem('musicTime');
+if (savedTime) audio.currentTime = parseFloat(savedTime);
+
+const savedVol = localStorage.getItem('musicVol');
+audio.volume = savedVol ? parseFloat(savedVol) : 0.5;
+volume.value = audio.volume;
+
+// 🔹 Lecture automatique si possible
+audio.play().then(() => {
+  btn.textContent = "⏸️";
+}).catch(() => {
+  console.log("Lecture bloquée, l'utilisateur doit appuyer sur ▶️");
+});
+
+// 🔹 Bouton Play / Pause
+btn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏸️";
+  } else {
+    audio.pause();
+    btn.textContent = "▶️";
+  }
+});
+
+// 🔹 Volume
+volume.addEventListener('input', () => {
+  audio.volume = volume.value;
+  localStorage.setItem('musicVol', volume.value);
+});
+
+// 🔹 Sauvegarder la position toutes les secondes
+setInterval(() => {
+  localStorage.setItem('musicTime', audio.currentTime);
+}, 1000);
+</script>
+</body>
+</html>
