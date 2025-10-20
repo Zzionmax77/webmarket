@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebMarket – Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<header class="site-header">
+    <div class="header-container" style="display: flex; align-items: center; justify-content: flex-start; gap: 12px;">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.jpg" alt="Logo WebMarket" class="logo" style="max-width: 150%; height: auto;" />
+        </a>
+        <div class="site-title">
+            <h1 style="margin: 0; font-size: 1.6em; color: white;">WebMarket</h1>
+            <p style="margin: 0; font-size: 0.9em; color: rgba(255,255,255,0.8);">Votre page accueil</p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Présentation du site -->
+    <section id="presentation">
+        <h2>Présentation</h2>
+        <p class="intro">
+            WebMarket est un site vitrine de produits fictifs créé dans le cadre d'un projet pédagogique. L'objectif : apprendre HTML, CSS et PHP en faisant évoluer ce mini-site au fil des séances.
+        </p>
+    </div>
+<section id="gifs" style="text-align: center;">
+    <h2>Nos Animations</h2>
+    <div class="tenor-gif-embed" data-postid="7408854170742055240" data-share-method="host" data-aspect-ratio="1.13208" data-width="100%">
+        <a href="https://tenor.com/view/dexter-james-doakes-surprise-mf-can%27t-prove-it-gif-7408854170742055240">Dexter James Doakes GIF</a>from <a href="https://tenor.com/search/dexter-gifs">Dexter GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</section>
+
+
+<!-- Bouton pour ouvrir/fermer la barre latérale -->
+<button1 class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu
+</button1>
+
+<!-- Barre latérale de navigation -->
+<aside class="sidebar" id="sidebar">
+    <h2>Navigation</h2>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="config.html">Configurations PC Gamer</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</aside>
+
+<script>
+    // Fonction pour basculer l'ouverture/fermeture de la sidebar
+    function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+    }
+</script>
+
+<!-- Pied de page -->
+<footer>
+    <p>Projet WebMarket – 2025 • Fait par : <a href="https://www.instagram.com/Zzionmax/#" target="_blank"><em>ALEX BINENUA</em></a></p>
+</footer>
+
+<!-- === Mini lecteur audio persistant === -->
+
+<div class="audio-mini-panel" id="miniLecteur" style="position:fixed;bottom:16px;right:16px;z-index:9999;">
+    <button id="playPause" aria-label="Lecture/Pause audio">▶️</button>
+    <input type="range" id="volume" min="0" max="1" step="0.05" value="1" aria-label="Volume audio" style="width:80px;">
+</div>
+<audio id="musique">
+  <source src="Niska - Adriano (Clip Officiel).mp3" type="audio/mpeg">
+</audio>
+<script>
+const audio = document.getElementById('musique');
+const btn = document.getElementById('playPause');
+const volume = document.getElementById('volume');
+// 🔹 Restaurer la position et le volume
+const savedTime = localStorage.getItem('musicTime');
+if (savedTime) audio.currentTime = parseFloat(savedTime);
+const savedVol = localStorage.getItem('musicVol');
+audio.volume = savedVol ? parseFloat(savedVol) : 0.5;
+volume.value = audio.volume;
+// 🔹 Lecture automatique si possible
+audio.play().then(() => {
+  btn.textContent = "⏸️";
+}).catch(() => {
+  console.log("Lecture bloquée, l'utilisateur doit appuyer sur ▶️");
+});
+// 🔹 Bouton Play / Pause
+btn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏸️";
+  } else {
+    audio.pause();
+    btn.textContent = "▶️";
+  }
+});
+// 🔹 Volume
+volume.addEventListener('input', () => {
+  audio.volume = volume.value;
+  localStorage.setItem('musicVol', volume.value);
+});
+// 🔹 Sauvegarder la position toutes les secondes
+setInterval(() => {
+  localStorage.setItem('musicTime', audio.currentTime);
+}, 1000);
+</script>
+</body>
+</html>
